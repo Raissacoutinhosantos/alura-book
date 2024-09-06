@@ -28,8 +28,27 @@ body {
     display: none;
     position:absolute;
     top: 100%;
+    width: 60vw;
 }
 
 .container_botao:checked ~ .lista-menu {
     display: block;
+}
+
+.lista-menu_titulo,
+.lista-menu_item {
+    padding:1em;
+    background-color: var(--rosa);
+}
+
+.lista-menu_titulo {
+    color: var(--laranja);
+}
+
+.lista-menu_link {
+    background: var(--azul-degrade)
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
 }
