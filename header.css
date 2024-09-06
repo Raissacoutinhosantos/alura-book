@@ -12,6 +12,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .container{
@@ -19,6 +20,16 @@ body {
     align-items: center;
 }
 
-.container_imagem{
-    padding 1em;
+.container_imagem {
+    padding: 1em;
+}
+
+.lista-menu {
+    display: none;
+    position:absolute;
+    top: 100%;
+}
+
+.container_botao:checked ~ .lista-menu {
+    display: block;
 }
